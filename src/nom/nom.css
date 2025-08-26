@@ -111,16 +111,16 @@ details p {
         rotate: 0deg;
     }
 }
-#resolve{
+#nom_resolve{
     display: none;
     text-align: center;
 }
-#resolve h2{
+#nom_resolve h2{
     color: green;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
-#error {
+#nom_error {
     display: none;
     background-color: #fde7e9;
     color: #a80000;
@@ -131,11 +131,11 @@ details p {
     text-align: center;
 }
 
-#error p {
+#nom_error p {
     margin: 0;
 }
 
-#error p#msg {
+#nom_error p#msg {
     margin-top: 10px;
     font-style: italic;
 }

@@ -41,15 +41,19 @@
                 </ul>
             </details>
         </section>
-        <section id="confirme">
-            <button id="run">Verifier</button>      
+        <section id="nom_status">
+            <label for="nom_checkbox">Réussi : </label>
+            <input readonly type="checkbox" id="nom_isResolve" disabled/>
         </section>
-        <section id="error">
+        <section id="confirme">
+            <button id="nom_run">Verifier</button>      
+        </section>
+        <section id="nom_error">
             <p>Le nom de l’auteur n’est pas correct. Veuillez réessayer.</p>
-            <p id="msg"></p>
+            <p id="nom_msg"></p>
         </section>
     </main>
-    <main id="resolve">
+    <main id="nom_resolve">
         <h2>Vous avez réussi !</h2>
     </main>
 </body>
