@@ -6,10 +6,10 @@
 /* global document, Office, Word */
 
 Office.onReady((info) => {
-    document.getElementById("run").onclick = run;
+    document.getElementById("nom_run").onclick = nom_run;
 });
 
-export async function run() {
+export async function nom_run() {
     await Word.run(async (context) => {
         const properties = context.document.properties;
         properties.load("author");
@@ -17,13 +17,13 @@ export async function run() {
         const author = properties.author;
         console.log("Auteur du document :",  author);
         if(author === "Groupe Projet Alpha"){
-            document.getElementById("error").style.display = "none";
-            document.getElementById("resolve").style.display = "block";
-            document.getElementById("exerice").style.display = "none";
+            document.getElementById("nom_error").style.display = "none";
+            document.getElementById("nom_resolve").style.display = "block";
+            document.getElementById("nom_isResolve").checked = true;
         }
         else{
-            document.getElementById("error").style.display = "block";
-            document.getElementById("msg").innerText = `Le nom actuel est : ${author} il doit être : Groupe Projet Alpha`;
+            document.getElementById("nom_error").style.display = "block";
+            document.getElementById("nom_msg").innerText = `Le nom actuel est : ${author} il doit être : Groupe Projet Alpha`;
         }
     });
   }
