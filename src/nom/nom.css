@@ -111,3 +111,31 @@ details p {
         rotate: 0deg;
     }
 }
+#resolve{
+    display: none;
+    text-align: center;
+}
+#resolve h2{
+    color: green;
+    font-size: 5rem;
+}
+
+#error {
+    display: none;
+    background-color: #fde7e9;
+    color: #a80000;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #e8b9bf;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#error p {
+    margin: 0;
+}
+
+#error p#msg {
+    margin-top: 10px;
+    font-style: italic;
+}
