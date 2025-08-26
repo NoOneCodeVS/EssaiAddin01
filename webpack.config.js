@@ -18,7 +18,7 @@ module.exports = async (env, options) => {
     devtool: "source-map",
     entry: {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
-      portrait: ["./src/portrait/portrait.js", "./src/portrait/portrait.html"],
+      nom: ["./src/nom/nom.js", "./src/nom/nom.html"],
       commands: "./src/commands/commands.js",
     },
     output: {
@@ -52,9 +52,9 @@ module.exports = async (env, options) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        filename: "portrait.html",
-        template: "./src/portrait/portrait.html",
-        chunks: ["polyfill", "portrait"],
+        filename: "nom.html",
+        template: "./src/nom/nom.html",
+        chunks: ["polyfill", "nom"],
       }),
       new CopyWebpackPlugin({
         patterns: [
